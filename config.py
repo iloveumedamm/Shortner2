@@ -9,7 +9,7 @@ load_dotenv()
 # Mandatory variables for the bot to start
 API_ID = int(os.getenv("API_ID", "21748181"))
 API_HASH = os.environ.get("API_HASH", "b1d962414e186e0778911f3183feac33")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "5824462361:AAHlZpwcvS__MflRmNDmWlW5mah90gZYWYQ")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6127135618:AAGEBcYZhon1UNKzs21E-cgLeCraNoQSlQo")
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split("Owner Id")] if os.environ.get("5651594253") else []
 ADMIN = ADMINS
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "mdisk")
@@ -19,7 +19,7 @@ ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 ADMINS.append(5651594253)
 #  Optionnal variables
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001949268590")) 
-UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "ziplinker_net") # For Force Subscription
+UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "bot_channel_011") # For Force Subscription
 BROADCAST_AS_COPY = os.environ.get('BROADCAST_AS_COPY', "True") # true if forward should be avoided
 WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", '') # image when someone hit /start # image when someone hit /start
 LINK_BYPASS = "False"
