@@ -5,21 +5,19 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-
 # Mandatory variables for the bot to start
-API_ID = int(os.getenv("API_ID", "21748181"))
-API_HASH = os.environ.get("API_HASH", "b1d962414e186e0778911f3183feac33")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "6127135618:AAGEBcYZhon1UNKzs21E-cgLeCraNoQSlQo")
-ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split("Owner Id")] if os.environ.get("5651594253") else []
+API_ID = int(os.getenv("API_ID", "24010108"))
+API_HASH = os.environ.get("API_HASH", "8d89700b2fc09a3aa6c906cbed65b040")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6257817586:AAHiHfYz_Ykn_n1QHgE7o1aRdOn5Gxg6M4U")
+ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS", "5791145987").split(",") if i.strip()] 
 ADMIN = ADMINS
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "mdisk")
-DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://Rishikesh001:Rishikesh001@cluster0.lqncnak.mongodb.net/?retryWrites=true&w=majority") 
-OWNER_ID =  int(os.environ.get("OWNER_ID", "5651594253")) 
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "shortnertest")
+DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://lajihi2115:lgAEiuZHs917nZgy@cluster0.lx88eg8.mongodb.net/?retryWrites=true&w=majority") 
+OWNER_ID =  int(os.environ.get("OWNER_ID", "5791145987")) 
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
-ADMINS.append(5651594253)
-#  Optionnal variables
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001949268590")) 
-UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "bot_channel_011") # For Force Subscription
+
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002002097084")) 
+UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "streaamdb") # For Force Subscription
 BROADCAST_AS_COPY = os.environ.get('BROADCAST_AS_COPY', "True") # true if forward should be avoided
-WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", '') # image when someone hit /start # image when someone hit /start
+WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", 'https://graph.org/file/b2b7504687ec41b794b9a.jpg') # image when someone hit /start
 LINK_BYPASS = "False"
