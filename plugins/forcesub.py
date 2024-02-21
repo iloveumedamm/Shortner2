@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
 @Client.on_message(filters.private & filters.incoming)
-@private_use
+
 async def forcesub_handler(c: Client, m: Message):
     owner = c.owner
     if UPDATE_CHANNEL:
