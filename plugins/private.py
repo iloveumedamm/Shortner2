@@ -5,7 +5,6 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
-from plugins.filters import private_use
 
 logger = logging.getLogger(__name__)
 
