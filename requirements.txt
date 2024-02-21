@@ -1,8 +1,8 @@
-aiohttp==3.8.1
+aiohttp
 pymongo[srv]
-motor==2.5.1
-Pyrogram==2.0.30
-TgCrypto==1.2.3
+motor
+Pyrogram
+TgCrypto
 bs4
 
 aiofiles
@@ -10,8 +10,8 @@ dnspython
 python-dotenv
 
  
-Flask==2.2.2
-gunicorn==20.1.0
+Flask
+gunicorn
 
 aiohttp
 pymongo[srv]
