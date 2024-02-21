@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 # Private Chat
 @Client.on_message(filters.private & filters.incoming)
-@private_use
+
 async def private_link_handler(c: Client, message: Message):
     try:
         user = await get_user(message.from_user.id)
