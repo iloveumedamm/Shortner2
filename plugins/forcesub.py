@@ -2,7 +2,7 @@ from config import UPDATE_CHANNEL
 from pyrogram import Client, filters
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from plugins.filters import private_use
+
 
 
 @Client.on_message(filters.private & filters.incoming)
